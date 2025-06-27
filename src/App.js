@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react";
+import MaintenancePage from "./MaintenancePage";
 
 function App() {
+  const isUnderMaintenance = true; // Set to true when you want to show the maintenance page
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {isUnderMaintenance ? (
+        <MaintenancePage />
+      ) : (
+        <h1>Welcome to our website!</h1>
+      )}
     </div>
   );
 }

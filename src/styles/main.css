@@ -1,0 +1,88 @@
+/* src/MaintenancePage.css */
+.maintenance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: #61dafb;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  overflow: hidden; /* Hide overflowing gears */
+  position: relative;
+}
+
+.maintenance-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.maintenance-message {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+/* Gear Animation */
+.gear {
+  font-size: 8em; /* Large gear icon */
+  position: absolute;
+  opacity: 0.2; /* Slightly transparent */
+  animation: rotate 10s linear infinite; /* Continuous rotation */
+}
+
+.gear-one {
+  top: 10%;
+  left: 15%;
+  animation-duration: 12s; /* Slower rotation */
+}
+
+.gear-two {
+  bottom: 15%;
+  right: 20%;
+  animation-duration: 8s; /* Faster rotation */
+  animation-direction: reverse; /* Rotate in opposite direction */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader Animation */
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #61dafb; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Fade In Animation for text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
