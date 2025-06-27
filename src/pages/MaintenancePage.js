@@ -9,7 +9,8 @@ const MaintenancePage = () => {
       <div className="gear gear-two">⚙️</div>
       <h1 className="maintenance-title">Under Maintenance</h1>
       <p className="maintenance-message">
-        We're busy improving our website for you. We'll be back online shortly!
+        We're busy improving our website to serve you better. We'll be back
+        online shortly!
       </p>
       <div className="loader"></div>
     </div>
