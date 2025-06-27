@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import MaintenancePage from "./MaintenancePage";
+import MaintenancePage from "./pages/MaintenancePage";
 
 function App() {
   const isUnderMaintenance = true; // Set to true when you want to show the maintenance page
